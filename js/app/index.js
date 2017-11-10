@@ -8,5 +8,10 @@ changeW();
 window.addEventListener("resize", changeW, false);
 
 $(function(){
-
+	$(document).on("touchstart",".fir",function(){
+		window.location.href = "money.html"
+	})
+	$(document).on("touchstart",".sed",function(){
+		window.location.href = "rongzi.html"
+	})
 })
