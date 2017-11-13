@@ -61,7 +61,7 @@
             color: #fff;
             position: relative;
             top: -1.25rem;
-            left: -3.5rem;
+            left: -4rem;
             font-size: 0.6rem;
             a{
                 font-size: 0.6rem;
@@ -209,7 +209,7 @@
 //          background-position-y: 18px;
             border: 1px #EEEEEE solid;
             box-shadow: 0 0 1px 0 #efefef;
-            padding: 0.15rem;
+            padding: 0.15rem 0.15rem 0.8rem;
             box-sizing: border-box;
             h4{
                 height: 2.1rem;
@@ -223,8 +223,8 @@
             }
             p{
                 color: #999;
-                height: 4.5rem;
-                line-height: 0.75rem;
+                height: 6.5rem;
+                line-height: 0.95rem;
                 font-size: 0.55rem;
             }
             h3{
@@ -407,46 +407,56 @@
         width: 100%;
         box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         p{
-            display: inline-block;
-            width: 32%;
+            width: 90%;
             box-sizing: border-box;
-            padding: 6.5rem 0 0 0;
-            background: url(../img/index4-04.png) no-repeat;
-            background-size: 100%;
             overflow: hidden;
-            &.p2{
-                background: url(../img/index4-05.png) no-repeat;
-                background-size: 100%;
+            color: #333;
+            text-align: left;
+            margin-bottom: 0.8rem;
+            background: url(../img/index-make5.png) no-repeat;
+            background-size: 100% 100%;
+            padding: 0.5rem;
+            &.p1{
                 a{
-                    padding: 0.5rem 0.8rem;
+                    background: url(../img/index-make1.png) no-repeat left center;
+                    background-size: 2.1rem auto;
+                }
+            }
+            &.p2{
+                a{
+                    background: url(../img/index-make2.png) no-repeat left center;
+                    background-size: 2.1rem auto;
                 }
             }
             &.p3{
-                background: url(../img/index4-06.png) no-repeat;
-                background-size: 100%;
-            }
-            &.p1{
-                margin-top: -0.8rem;
-                position: relative;
                 a{
-                    margin-top: 0.8rem;
+                    background: url(../img/index-make3.png) no-repeat left center;
+                    background-size: 1.8rem auto;
                 }
             }
             a{
                 display: block;
-                width: 50%;
-                margin: 0 auto;
-                font-size: 0.8rem;
+                font-size: 0.65rem;
                 line-height: 0.95rem;
                 font-weight: bold;
-                text-align: center;
                 color: #333;
-                padding: 0.95rem 0.8rem;
-                border: 1px #aaa solid;
+                text-align: left;                
+                padding: 0.8rem 0.2rem 0.8rem 2.6rem;                
                 background: #fff;
+                box-sizing: border-box;
+                i{
+                    float: right;
+                    font-style: normal;
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    margin-right: 0.3rem;
+                    background: url(../img/index-make4.png) no-repeat;
+                    background-size: 100% 100%;
+                }
             }
         }
     }
@@ -499,12 +509,29 @@
 }
 #swiper-container3 {
     .swiper-button-prev{
-        width: 0.75rem;
-        background-size: auto auto;
+        width: 1.1rem;
+        background: url(../img/make-left.png) no-repeat;
+        background-size: 100% 100%;
+        left: 0;
     }
     .swiper-button-next{
-        width: 0.75rem;
-        background-size: auto auto;
+        width: 1.1rem;
+        background: url(../img/make-right.png) no-repeat;
+        background-size: 100% 100%;
+        right: 0;
+    }
+    .swiper-wrapper{
+        align-items: center;
+    }
+    .swiper-slide{
+        padding: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        >div{
+            border: 2px solid #3caed2;
+            background: #fff;
+        }
     }
 }
  .index-block5-center2{
@@ -512,7 +539,7 @@
         height: 3rem;
         text-align: center;
         line-height: 1rem;
-        margin: 0 auto 1.5rem;
+        margin: 0.3rem auto .3rem;
         font-weight: bold;
         font-size: 0.7rem;
         color: #333;
@@ -532,7 +559,7 @@
             font-size: 0.55rem;
             line-height: 0.75rem;
             color: #999;
-            padding: 0 2.5rem;
+            padding: 0 1.5rem;
         }
         span{
             position: absolute;
@@ -553,15 +580,17 @@
             }
         }
         a{
-            display: block;
-            width: 2rem;
-            height: 1rem;
+            display: inline-block;
             text-align: center;
             line-height: 1rem;
-            color: #34add4;
+            color: #fff;
+            background: #34add4;
             font-weight: bold;
             font-size: 0.55rem;
-            border-bottom: 2px #333 solid;
+            border-radius: 5px;
             margin: 0 auto;
+            padding: 0.2rem 0.9rem;
+            position: relative;
+            top: 0.7rem;
         }
     }
