@@ -596,3 +596,63 @@
             top: 0.7rem;
         }
     }
+    .header{
+        height: 2.625rem;
+        background: rgba(47,47,48,1);
+        z-index: 9999;
+        position: relative;
+        .logo-img{
+            width: 4.5rem;
+            margin: 0.5rem 0 0 0.5rem;
+        }
+        .white-bg{
+            position: absolute;
+            right: 0px;
+            top: -1px;
+            width: 13.5rem;
+            background: url(../img/top-bg-2.png) no-repeat top right;
+            background-size: 100% auto;
+            height: 100%;
+            >a{
+                position: absolute;
+                right: 0.75rem;
+                top: 0.35rem;
+                width: 1.4rem;
+                height: 1.4rem;
+                z-index: 99;
+                >img{
+                    width: 100%;
+                }
+            }
+            .login-btn{
+                right: 2.8rem;
+            }
+            .small-menu{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 13.25rem;
+                height: 11rem;
+                background: url(../img/top-bg-1.png) no-repeat top right;
+                background-size: 100% 100%;
+                padding: 1.6rem 1rem 0 1.5rem;
+                box-sizing: border-box;
+                >div{
+                    min-height: 1.5rem;
+                    line-height: 1.5rem;
+                    border-bottom: solid 1px #d0d0d0;
+                    a{
+                        font-size: @title3;
+                        color: #353b4b;
+                    }
+                    .two-titles{
+                        color: #8a90a1;
+                        margin-left: 0.2rem;
+                    }
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
