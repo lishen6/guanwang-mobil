@@ -14,4 +14,12 @@ $(function(){
 	$(document).on("touchstart",".sed",function(){
 		window.location.href = "rongzi.html"
 	})
+    $('.menu-btn').click(function(event) {
+        
+        if ($('.small-menu').hasClass('hide')) {
+            $('.small-menu').removeClass('hide');
+        }else{
+            $('.small-menu').addClass('hide');
+        };
+    });
 })
