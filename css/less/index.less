@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
 //  max-height: 16.75rem;
-    overflow: hidden;    
+    overflow: hidden;  
 }
 .index-block1-top{
     width: 100%; 
@@ -223,7 +223,7 @@
             }
             p{
                 color: #999;
-                height: 6.5rem;
+                height: 6.9rem;
                 line-height: 0.95rem;
                 font-size: 0.55rem;
                 text-align: justify;
@@ -257,7 +257,7 @@
         p{
             background: url(../img/index2-01.png) no-repeat left top;
             background-size: 2.5rem;
-            padding: 1.51rem 0 0 1.8rem;
+            padding: 1.51rem 0 0.2rem 1.6rem;
             box-sizing: border-box;
             font-size: 0.75rem;
             color: #333;
@@ -644,10 +644,22 @@
                     a{
                         font-size: @title3;
                         color: #353b4b;
+                        font-weight: bold;
+                        display: block;
                     }
                     .two-titles{
-                        color: #8a90a1;
+                        color: #353b4b;
                         margin-left: 0.2rem;
+                        font-weight: normal;
+                        display: inline-block;
+                        height: 0.6rem;
+                        line-height: 0.6rem;
+                        position: relative;
+                        top: -0.38rem;
+                        &:last-child{
+                            border-left: 1px #353b4b solid;
+                            padding-left: 0.4rem;
+                        }
                     }
                     &:last-child{
                         border-bottom: none;
